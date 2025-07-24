@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+.venv/*
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
+.env.*
+
+# Ollama (models and cache)
+~/.ollama/
+ollama.log
+
+# LangChain cache/artifacts (if any)
+.cache/
+langchain.db
+langchain_logs/
+
+# Streamlit
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test/coverage
+htmlcov/
+.tox/
+.coverage
+.cache/
+pytest_cache/
+.nox/
+.mypy_cache/
+.pytest_cache/
+
+# Misc
+*.sqlite3
+*.db
+*.pkl
+*.h5
+*.ckpt
