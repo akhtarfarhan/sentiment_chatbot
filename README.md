@@ -179,24 +179,8 @@ The project delivers a **privacy‑first chatbot** that retains conversational c
 
 ## 2 System Architecture
 
-```mermaid
-flowchart TB
-    subgraph Browser
-      UI[Streamlit Chat] -- POST /chat --> API[FastAPI Service]
-    end
+<img width="845" height="521" alt="image" src="https://github.com/user-attachments/assets/abe4d50b-17f2-49e2-898f-cd2b85c88fe7" />
 
-    subgraph Backend
-      API --> SA[Sentiment Analyzer]
-      API --> MEM[Conversation Memory]
-      API --> LLM[ChatOllama · Mistral‑7B]
-      MEM <-->|history| API
-      SA -- label --> API
-    end
-
-    LLM <--> OL[(Ollama Daemon)]
-```
-
----
 
 ## 3 Module Breakdown
 
